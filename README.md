@@ -1,2 +1,2 @@
 # Dcoker-Compose-Files-Archive
-A Git Repository For Storing Commonly Used Docker-Compose files
+存放常用组件的 docker-compose 文件，目的是做到随取随用
