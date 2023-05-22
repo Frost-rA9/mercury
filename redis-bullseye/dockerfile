@@ -1,0 +1,3 @@
+FROM redis:7.0.11-bullseye
+
+COPY ./conf/redis.conf /etc/redis/redis.conf
