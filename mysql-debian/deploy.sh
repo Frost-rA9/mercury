@@ -1,5 +1,5 @@
 usage() {
-	echo "Usage: sh 执行脚本.sh [init|copy|rerun]"
+	echo "Usage: sh 执行脚本.sh [init|copy|stop|rerun]"
 	exit 1
 }
 
@@ -9,6 +9,10 @@ init(){
 
 copy(){
     docker cp mysql-8.0.32-debian:/etc/mysql/. ./conf
+}
+
+stop(){
+	docker stop mysql-8.0.32-debian
 }
 
 rerun(){
@@ -21,6 +25,9 @@ case "$1" in
 ;;
 "copy")
 	copy
+;;
+"stop")
+	stop
 ;;
 "rerun")
 	rerun
