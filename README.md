@@ -20,7 +20,7 @@
 # 现有组件
 
 - MySQL
-  - mysql-debian
+  - [mysql-debian](./mysql-debian/README.md)
 - Redis
   - redis-bullseye
 
