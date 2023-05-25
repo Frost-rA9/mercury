@@ -1,10 +1,16 @@
 # redis-bullseye
 
+------
+
 ## 环境说明
+
+------
 
 使用 `redis-bullseye` 镜像，并在 `Debian` 发行版通过测试
 
 ## 使用说明
+
+------
 
 1. clone 本仓库
 2. 将 redis-bullseye 文件夹上传至 Linux 服务器或虚拟机（若于 Linux 上直接进行 clone 操作则无需进行该步骤）
