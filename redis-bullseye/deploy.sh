@@ -3,7 +3,7 @@ usage() {
 	exit 1
 }
 
-init(){
+deploy(){
     docker compose -f deploy.yml up -d
 }
 
