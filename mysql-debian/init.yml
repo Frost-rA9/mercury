@@ -6,8 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: 1123581321345589
       PREFER_HOST_MODE: hostname
     volumes:
-      - /home/mysql/data:/var/lib/mysql
-      - /home/mysql/conf/my.cnf:/etc/mysql/my.cnf
+      - ./data:/var/lib/mysql
     restart: always
     command: [
       'mysqld',
