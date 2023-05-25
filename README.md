@@ -22,6 +22,6 @@
 - MySQL
   - [mysql-debian](./mysql-debian/README.md)
 - Redis
-  - redis-bullseye
+  - [redis-bullseye](./redis-bullseye/README.md)
 
 更多组件持续添加中（等我哪天有空写了再说，预计下一个是 Redis 主从复制）
