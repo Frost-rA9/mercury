@@ -15,4 +15,4 @@
 
 # Shell说明
 
-目前所有的 Shell 脚本仍在测试中，请直接使用 docker-compose 文件进行容器部署
+所有 Shell 脚本均在 docker-compose 文件相同的 Linux 环境下通过测试
