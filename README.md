@@ -11,3 +11,8 @@
 
 若文件夹名称中包含有特定 Linux 发行版字样，如 `mysql-debian` 则代表使用 `mysql-debian` 镜像，并在 `Debian` 发行版进行测试
 
+------
+
+# Shell说明
+
+目前所有的 Shell 脚本仍在测试中，请直接使用 docker-compose 文件进行容器部署
