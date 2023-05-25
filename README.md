@@ -16,3 +16,12 @@
 # Shell说明
 
 所有 Shell 脚本均在 docker-compose 文件相同的 Linux 环境下通过测试
+
+# 现有组件
+
+- MySQL
+  - mysql-debian
+- Redis
+  - redis-bullseye
+
+更多组件持续添加中（等我哪天有空写了再说，预计下一个是 Redis 主从复制）
