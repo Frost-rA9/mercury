@@ -7,7 +7,7 @@
 ## 使用说明
 
 1. clone 本仓库
-2. 将 mysql-debian 文件夹上传至 Linux 服务器或虚拟机（若于 Linux 上直接进行clone 操作则无需进行该步骤）
+2. 将 mysql-debian 文件夹上传至 Linux 服务器或虚拟机（若于 Linux 上直接进行 clone 操作则无需进行该步骤）
 3. 修改 `init.yml` 、`rerun.yml` 、`deploy.sh` 文件中的容器名称（如果你不喜欢我起的容器名称的话）
 4. 执行命令 `cd /path/to/mysql-debian`
 5. 执行命令 `./deploy.sh init` ，若提示权限不足，则先执行 `chmod +x ./deploy.sh`
