@@ -12,7 +12,7 @@ copy(){
 }
 
 stop(){
-	docker stop mysql-8.0.32-debian
+	docker compose -f init.yml stop
 }
 
 rerun(){
