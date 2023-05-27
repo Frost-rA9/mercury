@@ -1,0 +1,52 @@
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.79.0.0/24
+
+services:
+  redis-bullseye-master:
+    container_name: redis-7.0.11-bullseye-master
+    image: redis:7.0.11-bullseye
+    volumes:
+      - ./redis-bullseye-master/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-bullseye-master/data:/data
+    restart: always
+    ports:
+      - "6379:6379"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      default:
+        ipv4_address: 172.79.0.100
+  
+  redis-bullseye-slave1:
+    container_name: redis-7.0.11-bullseye-slave1
+    image: redis:7.0.11-bullseye
+    volumes:
+      - ./redis-bullseye-slave1/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-bullseye-slave1/data:/data
+    restart: always
+    ports:
+      - "16379:6379"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      default:
+        ipv4_address: 172.79.0.101
+
+  redis-bullseye-slave2:
+    container_name: redis-7.0.11-bullseye-slave2
+    image: redis:7.0.11-bullseye
+    volumes:
+      - ./redis-bullseye-slave2/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-bullseye-slave2/data:/data
+    restart: always
+    ports:
+      - "26379:6379"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      default:
+        ipv4_address: 172.79.0.102
