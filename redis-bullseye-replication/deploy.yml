@@ -6,7 +6,7 @@ networks:
         - subnet: 172.79.0.0/24
 
 services:
-  redis-bullseye-master:
+  redis-master:
     container_name: redis-7.0.11-bullseye-master
     image: redis:7.0.11-bullseye
     volumes:
@@ -21,7 +21,7 @@ services:
       default:
         ipv4_address: 172.79.0.100
   
-  redis-bullseye-slave1:
+  redis-slave1:
     container_name: redis-7.0.11-bullseye-slave1
     image: redis:7.0.11-bullseye
     volumes:
@@ -36,7 +36,7 @@ services:
       default:
         ipv4_address: 172.79.0.101
 
-  redis-bullseye-slave2:
+  redis-slave2:
     container_name: redis-7.0.11-bullseye-slave2
     image: redis:7.0.11-bullseye
     volumes:
