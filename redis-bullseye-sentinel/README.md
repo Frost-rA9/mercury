@@ -44,19 +44,19 @@ Redis 哨兵监控
 redis-bullseye-sentinel/
 ├── conf
 │   ├── sentinel
-│	│	├── redis-sentinel1
-│	│	│	├── sentinel.conf
-│	│	├── redis-sentinel2
-│	│	│	├── sentine2.conf
-│	│	└── redis-sentinel2
-│	│		└── sentine2.conf
+│   │   ├── redis-sentinel1
+│   │   │   ├── sentinel.conf
+│   │   ├── redis-sentinel2
+│   │   │   ├── sentine2.conf
+│   │   └── redis-sentinel2
+│   │       └── sentine2.conf
 │   └── server
-│		├── redis-matser
-│		│	├── redis.conf
-│		├── redis-slave1
-│		│	├── redis.conf
-│		└── redis-sentinel2
-│			└── redis.conf
+│       ├── redis-matser
+│       │   ├── redis.conf
+│       ├── redis-slave1
+│       │   ├── redis.conf
+│       └── redis-sentinel2
+│           └── redis.conf
 ├── deploy.sh
 ├── deploy.yml
 └── README.md
