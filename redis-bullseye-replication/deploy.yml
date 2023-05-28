@@ -10,8 +10,8 @@ services:
     container_name: redis-7.0.11-bullseye-master
     image: redis:7.0.11-bullseye
     volumes:
-      - ./redis-bullseye-master/conf/redis.conf:/etc/redis/redis.conf
-      - ./redis-bullseye-master/data:/data
+      - ./redis-master/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-master/data:/data
     restart: always
     ports:
       - "6379:6379"
@@ -25,8 +25,8 @@ services:
     container_name: redis-7.0.11-bullseye-slave1
     image: redis:7.0.11-bullseye
     volumes:
-      - ./redis-bullseye-slave1/conf/redis.conf:/etc/redis/redis.conf
-      - ./redis-bullseye-slave1/data:/data
+      - ./redis-slave1/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-slave1/data:/data
     restart: always
     ports:
       - "6479:6379"
@@ -40,8 +40,8 @@ services:
     container_name: redis-7.0.11-bullseye-slave2
     image: redis:7.0.11-bullseye
     volumes:
-      - ./redis-bullseye-slave2/conf/redis.conf:/etc/redis/redis.conf
-      - ./redis-bullseye-slave2/data:/data
+      - ./redis-slave2/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis-slave2/data:/data
     restart: always
     ports:
       - "6579:6379"
