@@ -10,7 +10,7 @@ services:
     container_name: redis-7.0.11-bullseye-sentinel1
     image: redis:7.0.11-bullseye
     volumes:
-      - ./sentinel/redis-sentinel1/conf/sentinel.conf:/etc/redis/sentinel.conf
+      - ./sentinel/redis-sentinel1/conf:/etc/redis
       - ./sentinel/redis-sentinel1/data:/data
     restart: always
     ports:
@@ -25,7 +25,7 @@ services:
     container_name: redis-7.0.11-bullseye-sentinel2
     image: redis:7.0.11-bullseye
     volumes:
-      - ./sentinel/redis-sentinel2/conf/sentinel.conf:/etc/redis/sentinel.conf
+      - ./sentinel/redis-sentinel2/conf:/etc/redis
       - ./sentinel/redis-sentinel2/data:/data
     restart: always
     ports:
@@ -40,7 +40,7 @@ services:
     container_name: redis-7.0.11-bullseye-sentinel3
     image: redis:7.0.11-bullseye
     volumes:
-      - ./sentinel/redis-sentinel3/conf/sentinel.conf:/etc/redis/sentinel.conf
+      - ./sentinel/redis-sentinel3/conf:/etc/redis
       - ./sentinel/redis-sentinel3/data:/data
     restart: always
     ports:
@@ -55,7 +55,7 @@ services:
     container_name: redis-7.0.11-bullseye-master
     image: redis:7.0.11-bullseye
     volumes:
-      - ./server/redis-master/conf/redis.conf:/etc/redis/redis.conf
+      - ./server/redis-master/conf:/etc/redis
       - ./server/redis-master/data:/data
     restart: always
     ports:
@@ -70,7 +70,7 @@ services:
     container_name: redis-7.0.11-bullseye-slave1
     image: redis:7.0.11-bullseye
     volumes:
-      - ./server/redis-slave1/conf/redis.conf:/etc/redis/redis.conf
+      - ./server/redis-slave1/conf:/etc/redis
       - ./server/redis-slave1/data:/data
     restart: always
     ports:
@@ -85,7 +85,7 @@ services:
     container_name: redis-7.0.11-bullseye-slave2
     image: redis:7.0.11-bullseye
     volumes:
-      - ./server/redis-slave2/conf/redis.conf:/etc/redis/redis.conf
+      - ./server/redis-slave2/conf:/etc/redis
       - ./server/redis-slave2/data:/data
     restart: always
     ports:
