@@ -17,5 +17,5 @@ Redis 单节点
 3. 执行命令 `cd /path/to/redis-bullseye` 
 4. 修改 `redis-bullseye/conf/` 文件夹下的 `redis.conf` 配置文件（我提供的配置文件已经做出如下改动：关闭 IP 绑定、关闭保护模式、修改 log 文件名、开启 AOF 持久化）
 5. 修改 `deploy.yml` 文件中的容器名称（如果你不喜欢我起的容器名称的话）
-6. 执行命令 `./deploy.sh deploy`
+6. 执行命令 `./deploy.sh deploy` ，若提示权限不足，则先执行命令 `chmod +x ./deploy.sh`
 7. 执行命令 `docker ps` 以及 `docker logs <container-name>` 确认 Redis 容器创建并成功运行

@@ -25,7 +25,7 @@
 - MySQL
   - [mysql-debian](./mysql-debian/README.md)
 - Redis
-  - [redis-bullseye(Redis 单机)](./redis-bullseye/README.md)
+  - [redis-bullseye(Redis 单节点)](./redis-bullseye/README.md)
   - [redis-bullseye-replication(Reids 主从复制)](./redis-bullseye-replication/README.md)
   - [redis-bullseye-sentinel(Redis 哨兵监控)](./redis-bullseye-sentinel/README.md)
 
