@@ -45,16 +45,16 @@ redis-bullseye-sentinel/
 ├── conf
 │   ├── sentinel
 │   │   ├── redis-sentinel1
-│   │   │   ├── sentinel.conf
+│   │   │   └── sentinel.conf
 │   │   ├── redis-sentinel2
-│   │   │   ├── sentine2.conf
+│   │   │   └── sentine2.conf
 │   │   └── redis-sentinel2
 │   │       └── sentine2.conf
 │   └── server
 │       ├── redis-matser
-│       │   ├── redis.conf
+│       │   └── redis.conf
 │       ├── redis-slave1
-│       │   ├── redis.conf
+│       │   └── redis.conf
 │       └── redis-sentinel2
 │           └── redis.conf
 ├── deploy.sh
