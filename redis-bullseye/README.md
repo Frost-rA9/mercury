@@ -6,7 +6,7 @@ Redis 单节点
 
 ## 环境说明
 
-使用 `redis-bullseye` 镜像，并在 `Debian` 发行版通过测试
+使用 `redis:bullseye` 镜像，并在 `Debian` 发行版通过测试
 
 ------
 
