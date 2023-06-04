@@ -30,7 +30,7 @@
   - [redis-bullseye-sentinel(Redis 哨兵监控)](./redis-bullseye-sentinel/README.md)
 
 - 消息中间件
-  - rabbitmq-management(RabbitMQ 单节点 带控制台)
+  - [rabbitmq-management(RabbitMQ 单节点 带控制台)](./rabbitmq-management/README.md)
 
 更多组件持续添加中（等我哪天有空写了再说，预计下一个是 Redis 集群）
 
