@@ -32,6 +32,8 @@ services:
       - "6479:6379"
     privileged: true
     command: redis-server /etc/redis/redis.conf
+    depends_on:
+      - redis-master
     networks:
       default:
         ipv4_address: 172.79.0.101
@@ -47,6 +49,8 @@ services:
       - "6579:6379"
     privileged: true
     command: redis-server /etc/redis/redis.conf
+    depends_on:
+      - redis-master
     networks:
       default:
         ipv4_address: 172.79.0.102
