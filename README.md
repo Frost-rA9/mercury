@@ -1,6 +1,6 @@
-# Dcoker-Compose-Files-Archive
+# mercury-bullet-compose
 
-存放常用组件的 docker-compose 文件，目的是做到随取随用
+正如其名，这是一个放置了 `compose` 文件的水银子弹仓库
 
 -------
 
