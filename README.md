@@ -22,6 +22,8 @@
 
 # 现有组件
 
+- Portainer
+  - [portainer-ce](./portainer-ce/README.md)
 - MySQL
   - [mysql-debian](./mysql-debian/README.md)
 - Redis
