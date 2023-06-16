@@ -7,7 +7,7 @@ services:
       PREFER_HOST_MODE: hostname
     volumes:
       - ./data:/var/lib/mysql
-    restart: always
+    restart: unless-stopped
     command: [
       'mysqld',
       '--innodb-buffer-pool-size=80M',
