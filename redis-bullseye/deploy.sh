@@ -1,5 +1,5 @@
 usage() {
-	echo "Usage: sh 执行脚本.sh [deploy]"
+	echo "Usage: sh 执行脚本.sh [deploy|stop]"
 	exit 1
 }
 
