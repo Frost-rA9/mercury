@@ -42,13 +42,13 @@
   - [redis-bullseye-sentinel(Redis 哨兵监控)](./redis-bullseye-sentinel/README.md)
   - [redis-bullseye-cluster(Redis 集群分片)](./redis-bullseye-cluster/README.md)
 - MongoDB
-  - [mongodb(mongo + mongo-express)](./mongodb/README.md)
+  - [mongodb(MongoDB + Mongo Express)](./mongodb/README.md)
 - RabbitMQ
   - [rabbitmq-management(RabbitMQ 单节点 带控制台)](./rabbitmq-management/README.md)
 - RocketMQ
   - [rocketmq(RocketMQ Nameserver + Broker + Dadhboard)](./rocketmq/README.md)
 
-更多组件持续添加中（等我哪天有空写了再说，预计下一个是 MongoDB ）
+更多组件持续添加中（等我哪天有空写了再说，预计下一个是 Nacos ）
 
 ------
 
