@@ -43,6 +43,8 @@
   - [redis-bullseye-cluster(Redis 集群分片)](./redis-bullseye-cluster/README.md)
 - MongoDB
   - [mongodb(MongoDB + Mongo Express)](./mongodb/README.md)
+- Nacos
+  - [nacos-standalone(Nacos单机模式)]
 - RabbitMQ
   - [rabbitmq-management(RabbitMQ 单节点 带控制台)](./rabbitmq-management/README.md)
 - RocketMQ

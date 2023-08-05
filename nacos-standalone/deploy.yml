@@ -1,0 +1,16 @@
+services:
+  nacos:
+    container_name: nacos-2.2.3
+    image: nacos/nacos-server:v2.2.3
+    env_file:
+      - ./env/standalone.env
+    volumes:
+      - ./log/:/home/nacos/logs
+      - ./conf/application.properties:/home/nacos/conf/application.properties
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+    restart: unless-stopped
+    privileged: true
+    stdin_open: true
+    tty: true
