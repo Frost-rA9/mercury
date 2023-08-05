@@ -6,7 +6,7 @@ Nacos 单机模式
 
 ## 环境说明
 
-使用 `nacos/nacos-server 镜像，并在 `Debian` 发行版通过测试
+使用 `nacos/nacos-server` 镜像，并在 `Debian` 发行版通过测试
 
 ------
 
