@@ -27,6 +27,6 @@ Nacos 单机模式
 
 由于我本人很不喜欢一键启动多个不同组件的容器，因此该 docker compose 并没有包含 MySQL 容器
 
-如果需要配置 MySQL 持久化，请修改 `nacos-standalone/conf/` 文件夹下的 `application.properties` Nacos 配置文件，将其中数据库相关配置配置为你期望进行 Nacos 持久化的数据库
+如果需要配置 MySQL 持久化，请修改 `nacos-standalone/conf/` 文件夹下的 `application.properties` Nacos 配置文件，将其中数据库相关配置配置为你期望进行 Nacos 持久化的数据库，在 `nacos-standalone/conf/` 文件下下提供了一份 MySQL 持久化的配置供参考
 
 或者可以参考 [Nacos Dcoker 官方仓库](https://github.com/nacos-group/nacos-docker)
