@@ -17,7 +17,7 @@ restart(){
 
 case "$1" in
 "deploy")
-	init
+	deploy
 ;;
 "stop")
 	stop
