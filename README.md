@@ -33,6 +33,7 @@
   - [mongodb(MongoDB + Mongo Express)](./mongodb/README.md)
 - Nacos
   - [nacos-standalone(Nacos单机模式)](./nacos-standalone/README.md)
+  - [nacos-cluster(Nacos集群模式)](./nacos-cluster/README.md)
 - RabbitMQ
   - [rabbitmq-management(RabbitMQ 单节点 带控制台)](./rabbitmq-management/README.md)
 - RocketMQ
