@@ -20,4 +20,4 @@ MySQL 单节点
 6. 执行命令 `docker ps` 以及 `docker logs <container-name>` 确认 MySQL 容器创建并成功运行
 7. 确认 MySQL 容器创建并运行成功之后，执行命令 `./deploy.sh copy`
 8. 执行命令 `./deploy.sh stop`
-9. 执行命令 `./deploy.sh rerun`
+9. 执行命令 `./deploy.sh complete`
