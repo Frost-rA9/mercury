@@ -1,5 +1,5 @@
 usage() {
-	echo "Usage: sh 执行脚本.sh [init|copy|stop|rerun]"
+	echo "Usage: sh 执行脚本.sh [init|copy|stop|complete]"
 	exit 1
 }
 
@@ -12,11 +12,11 @@ copy(){
 }
 
 stop(){
-	docker compose -f init.yml stop
+	docker stop mysql-8.0.33-debian
 }
 
 rerun(){
-    docker compose -f rerun.yml up -d
+    docker compose -f complete.yml up -d
 }
 
 case "$1" in
