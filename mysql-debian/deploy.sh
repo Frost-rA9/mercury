@@ -15,7 +15,7 @@ stop(){
 	docker stop mysql-8.0.33-debian
 }
 
-rerun(){
+complete(){
     docker compose -f complete.yml up -d
 }
 
@@ -29,8 +29,8 @@ case "$1" in
 "stop")
 	stop
 ;;
-"rerun")
-	rerun
+"complete")
+	complete
 ;;
 *)
 	usage
