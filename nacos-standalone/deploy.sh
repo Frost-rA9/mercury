@@ -1,9 +1,9 @@
 usage() {
-	echo "Usage: sh 执行脚本.sh [init|stop]"
+	echo "Usage: sh 执行脚本.sh [deploy|stop]"
 	exit 1
 }
 
-init(){
+deploy(){
     docker compose -f deploy.yml up -d
 }
 
@@ -12,8 +12,8 @@ stop(){
 }
 
 case "$1" in
-"init")
-	init
+"deploy")
+	deploy
 ;;
 "stop")
 	stop
