@@ -1,0 +1,16 @@
+services:
+  nginx:
+    container_name: nginx-1.25.2-bookworm
+    image: nginx:1.25.2-bookworm
+    volumes:
+      - ./conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./conf:/etc/nginx/conf
+      - ./logs:/var/log/nginx
+      - ./html:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    privileged: true
+    stdin_open: true
+    tty: true

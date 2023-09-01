@@ -1,0 +1,10 @@
+services:
+  nginx:
+    container_name: nginx-1.25.2-bookworm
+    image: nginx:1.25.2-bookworm
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    privileged: true
+    stdin_open: true
+    tty: true
