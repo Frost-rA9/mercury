@@ -3,29 +3,29 @@ usage() {
 	exit 1
 }
 
-deploy(){
-    docker compose -f compose.yml up -d
+deploy() {
+	docker compose -f compose.yml up -d
 }
 
-stop(){
+stop() {
 	docker compose -f compose.yml stop
 }
 
-restart(){
-    docker compose -f compose.yml restart
+restart() {
+	docker compose -f compose.yml restart
 }
 
 case "$1" in
 "deploy")
 	deploy
-;;
+	;;
 "stop")
 	stop
-;;
+	;;
 "restart")
 	restart
-;;
+	;;
 *)
 	usage
-;;
+	;;
 esac

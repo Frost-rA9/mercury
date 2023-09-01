@@ -3,36 +3,36 @@ usage() {
 	exit 1
 }
 
-init(){
-    docker compose -f init.yml up -d
+init() {
+	docker compose -f init.yml up -d
 }
 
-copy(){
-    docker cp mysql-8.0.33-debian:/etc/mysql/. ./conf
+copy() {
+	docker cp mysql-8.0.33-debian:/etc/mysql/. ./conf
 }
 
-stop(){
+stop() {
 	docker stop mysql-8.0.33-debian
 }
 
-complete(){
-    docker compose -f complete.yml up -d
+complete() {
+	docker compose -f complete.yml up -d
 }
 
 case "$1" in
 "init")
 	init
-;;
+	;;
 "copy")
 	copy
-;;
+	;;
 "stop")
 	stop
-;;
+	;;
 "complete")
 	complete
-;;
+	;;
 *)
 	usage
-;;
+	;;
 esac
