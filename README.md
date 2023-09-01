@@ -20,6 +20,8 @@
 
 - Portainer
   - [portainer-ce](./portainer-ce/README.md)
+- Nginx
+  - [nginx-bookworm](./nginx-bookworm/README.md)
 - Postgres
   - [postgres-15](./postgres-15/README.md) (From [FlapyPan](https://github.com/FlapyPan))
 - MySQL
@@ -39,7 +41,7 @@
 - RocketMQ
   - [rocketmq(RocketMQ Nameserver + Broker + Dadhboard)](./rocketmq/README.md)
 
-更多组件持续添加中（等我哪天有空写了再说，预计下一个是 Nacos ）
+更多组件持续添加中（等我哪天有空写了再说）
 
 ------
 

@@ -31,10 +31,12 @@ Nacos 集群模式
 
 ------
 
-## 关于持久化
+## 关于 MySQL 持久化与 Nginx 代理
 
-由于我本人很不喜欢一键启动多个不同组件的容器，因此该 docker compose 并没有包含 MySQL 与 Nginx 容器
+由于我本人很不喜欢一键启动多个不同组件的容器，因此该 docker-compose 并没有包含 MySQL 与 Nginx 容器
 
-但是由于 Nacos 集群必须使用 MySQL 集中式存储，因此相关的 Nacos 配置文件中对 MySQL 进行了相关配置，在使用该 docker compose 前，请自行配置 MySQL 服务，并请参照使用说明，对 Nacos 配置文件中的相关配置进行修改
+但是由于 Nacos 集群必须使用 MySQL 集中式存储，因此相关的 Nacos 配置文件中对 MySQL 进行了相关配置，在使用该 docker-compose 前，请自行配置 MySQL 服务，并请参照使用说明，对 Nacos 配置文件中的相关配置进行修改
+
+至于 Nginx 代理，在不配置的情况下也可以正常使用 Nacos 集群服务
 
 或者可以参考 [Nacos Dcoker 官方仓库](https://github.com/nacos-group/nacos-docker)
