@@ -1,0 +1,90 @@
+services:
+  redis-cluster:
+    container_name: redis-prototype
+    image: redis:7.2.0-bookworm
+    command: redis-cli --cluster create redis-node1:6379 redis-node2:6380 redis-node3:6381 redis-node4:6382 redis-node5:6383 redis-node6:6384 --cluster-replicas 1 --cluster-yes
+    depends_on:
+      - redis-node1
+      - redis-node2
+      - redis-node3
+      - redis-node4
+      - redis-node5
+      - redis-node6
+
+  redis-node1:
+    container_name: redis-node1
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node1/conf/redis.conf:/etc/redis/redis.conf
+      - ./node1/data:/data
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+      - "16379:16379"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+
+  redis-node2:
+    container_name: redis-node2
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node2/conf/redis.conf:/etc/redis/redis.conf
+      - ./node2/data:/data
+    restart: unless-stopped
+    ports:
+      - "6380:6380"
+      - "16380:16380"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+
+  redis-node3:
+    container_name: redis-node3
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node3/conf/redis.conf:/etc/redis/redis.conf
+      - ./node3/data:/data
+    restart: unless-stopped
+    ports:
+      - "6381:6381"
+      - "16381:16381"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+
+  redis-node4:
+    container_name: redis-node4
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node4/conf/redis.conf:/etc/redis/redis.conf
+      - ./node4/data:/data
+    restart: unless-stopped
+    ports:
+      - "6382:6382"
+      - "16382:16382"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+  
+  redis-node5:
+    container_name: redis-node5
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node5/conf/redis.conf:/etc/redis/redis.conf
+      - ./node5/data:/data
+    restart: unless-stopped
+    ports:
+      - "6383:6383"
+      - "16383:16383"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
+
+  redis-node6:
+    container_name: redis-node6
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./node6/conf/redis.conf:/etc/redis/redis.conf
+      - ./node6/data:/data
+    restart: unless-stopped
+    ports:
+      - "6384:6384"
+      - "16384:16384"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf

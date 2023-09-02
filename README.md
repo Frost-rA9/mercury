@@ -27,10 +27,10 @@
 - MySQL
   - [mysql-debian](./mysql-debian/README.md)
 - Redis
-  - [redis-bullseye(Redis 单节点)](./redis-bullseye/README.md)
-  - [redis-bullseye-replication(Reids 主从复制)](./redis-bullseye-replication/README.md)
-  - [redis-bullseye-sentinel(Redis 哨兵监控)](./redis-bullseye-sentinel/README.md)
-  - [redis-bullseye-cluster(Redis 集群分片)](./redis-bullseye-cluster/README.md)
+  - [redis-bookworm(Redis 单节点)](./redis-bookworm/README.md)
+  - [redis-bookworm-replication(Reids 主从复制)](./redis-bookworm-replication/README.md)
+  - [redis-bookworm-sentinel(Redis 哨兵监控)](./redis-bookworm-sentinel/README.md)
+  - [redis-bookworm-cluster(Redis 集群分片)](./redis-bookworm-cluster/README.md)
 - MongoDB
   - [mongodb(MongoDB + Mongo Express)](./mongodb/README.md)
 - Nacos
