@@ -8,11 +8,11 @@ init() {
 }
 
 copy() {
-	docker cp mysql-8.0.33-debian:/etc/mysql/. ./conf
+	docker cp mysql-8.0.34-debian:/etc/mysql/. ./conf
 }
 
 stop() {
-	docker stop mysql-8.0.33-debian
+	docker compose -f init.yml stop
 }
 
 complete() {
