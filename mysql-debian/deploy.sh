@@ -8,7 +8,7 @@ init() {
 }
 
 copy() {
-	docker cp mysql-8.0.34-debian:/etc/mysql/. ./conf
+	docker cp mysql-8.0.35-debian:/etc/mysql/. ./conf
 }
 
 stop() {

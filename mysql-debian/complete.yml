@@ -1,7 +1,7 @@
 services:
   mysql:
-    container_name: mysql-8.0.34-debian
-    image: mysql:8.0.34-debian
+    container_name: mysql-8.0.35-debian
+    image: mysql:8.0.35-debian
     environment:
       MYSQL_ROOT_PASSWORD: 1123581321345589
       PREFER_HOST_MODE: hostname
