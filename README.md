@@ -23,7 +23,7 @@
 - Nginx
   - [nginx-bookworm](./nginx-bookworm/README.md)
 - Postgres
-  - [postgres-15](./postgres-15/README.md) (From [FlapyPan](https://github.com/FlapyPan))
+  - [postgres-bookworm](./postgres-bookworm/README.md) (From [FlapyPan](https://github.com/FlapyPan))
 - MySQL
   - [mysql-debian](./mysql-debian/README.md)
 - Redis
