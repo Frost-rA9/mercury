@@ -1,6 +1,6 @@
-# mercury-bullet-compose
+# mercury
 
-正如其名，这是一个放置了 `compose` 文件的水银子弹仓库
+放置一点 `compose` 文件用于开源学习交流，请勿用于生产环境
 
 -------
 
