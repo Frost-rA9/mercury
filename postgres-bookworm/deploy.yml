@@ -1,5 +1,5 @@
 services:
-  pgsql:
+  postgres:
     container_name: postgres-16.1-bookworm
     image: postgres:16.1-bookworm
     environment:

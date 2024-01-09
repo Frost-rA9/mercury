@@ -4,15 +4,15 @@ usage() {
 }
 
 deploy() {
-	docker compose -f compose.yml up -d
+	docker compose -f deploy.yml up -d
 }
 
 stop() {
-	docker compose -f compose.yml stop
+	docker compose -f deploy.yml stop
 }
 
 restart() {
-	docker compose -f compose.yml restart
+	docker compose -f deploy.yml restart
 }
 
 case "$1" in
