@@ -1,0 +1,18 @@
+services:
+  influxdb:
+    container_name: influxdb-2.7.5
+    image: influxdb:2.7.5
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=root
+      - DOCKER_INFLUXDB_INIT_PASSWORD=1123581321345589
+      - DOCKER_INFLUXDB_INIT_ORG=lou
+      - DOCKER_INFLUXDB_INIT_BUCKET=lou
+    volumes:
+      - ./data:/var/lib/influxdb2
+      - ./conf:/etc/influxdb2
+      - ./logs:/var/log/influxdb2
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+    privileged: true
