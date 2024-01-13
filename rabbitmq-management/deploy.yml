@@ -1,0 +1,12 @@
+services:
+  rabbitmq-management:
+    image: rabbitmq:3.12.10-management
+    container_name: rabbitmq-3.12.10-management
+    environment:
+      RABBITMQ_DEFAULT_USER : admin
+      RABBITMQ_DEFAULT_PASS : admin
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    privileged: true

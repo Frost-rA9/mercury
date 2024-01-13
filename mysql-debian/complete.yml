@@ -1,0 +1,24 @@
+services:
+  mysql:
+    container_name: mysql-8.0.35-debian
+    image: mysql:8.0.35-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: 1123581321345589
+      PREFER_HOST_MODE: hostname
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./conf:/etc/mysql
+    restart: unless-stopped
+    command: [
+      'mysqld',
+      '--innodb-buffer-pool-size=80M',
+      '--character-set-server=utf8mb4',
+      '--collation-server=utf8mb4_unicode_ci',
+      '--default-time-zone=+8:00',
+      '--lower-case-table-names=1'
+    ]
+    ports:
+      - "3306:3306"
+    privileged: true
+    stdin_open: true
+    tty: true

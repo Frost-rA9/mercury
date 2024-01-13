@@ -1,0 +1,14 @@
+services:
+  postgres:
+    container_name: postgres-16.1-bookworm
+    image: postgres:16.1-bookworm
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1123581321345589
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    privileged: true

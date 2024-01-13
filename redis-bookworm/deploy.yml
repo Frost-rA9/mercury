@@ -1,0 +1,12 @@
+services:
+  redis:
+    container_name: redis-7.2.0-bookworm
+    image: redis:7.2.0-bookworm
+    volumes:
+      - ./conf/redis.conf:/etc/redis/redis.conf
+      - ./data:/data
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    privileged: true
+    command: redis-server /etc/redis/redis.conf
