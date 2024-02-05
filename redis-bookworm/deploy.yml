@@ -1,7 +1,7 @@
 services:
   redis:
-    container_name: redis-7.2.0-bookworm
-    image: redis:7.2.0-bookworm
+    container_name: redis-7.2-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./conf/redis.conf:/etc/redis/redis.conf
       - ./data:/data

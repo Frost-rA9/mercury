@@ -1,7 +1,7 @@
 services:
   redis-cluster:
     container_name: redis-prototype
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     command: redis-cli --cluster create redis-node1:6379 redis-node2:6380 redis-node3:6381 redis-node4:6382 redis-node5:6383 redis-node6:6384 --cluster-replicas 1 --cluster-yes
     depends_on:
       - redis-node1
@@ -13,7 +13,7 @@ services:
 
   redis-node1:
     container_name: redis-node1
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node1/conf/redis.conf:/etc/redis/redis.conf
       - ./node1/data:/data
@@ -26,7 +26,7 @@ services:
 
   redis-node2:
     container_name: redis-node2
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node2/conf/redis.conf:/etc/redis/redis.conf
       - ./node2/data:/data
@@ -39,7 +39,7 @@ services:
 
   redis-node3:
     container_name: redis-node3
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node3/conf/redis.conf:/etc/redis/redis.conf
       - ./node3/data:/data
@@ -52,7 +52,7 @@ services:
 
   redis-node4:
     container_name: redis-node4
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node4/conf/redis.conf:/etc/redis/redis.conf
       - ./node4/data:/data
@@ -65,7 +65,7 @@ services:
   
   redis-node5:
     container_name: redis-node5
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node5/conf/redis.conf:/etc/redis/redis.conf
       - ./node5/data:/data
@@ -78,7 +78,7 @@ services:
 
   redis-node6:
     container_name: redis-node6
-    image: redis:7.2.0-bookworm
+    image: redis:7.2-bookworm
     volumes:
       - ./node6/conf/redis.conf:/etc/redis/redis.conf
       - ./node6/data:/data
